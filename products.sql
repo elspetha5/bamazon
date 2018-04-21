@@ -13,7 +13,7 @@ PRIMARY KEY (item_id)
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Pens", "Office", 3.00, 200), ("Pink Glitter", "Crafts", 1.89, 50),
+VALUES ("Pens", "Office", 3.17, 200), ("Pink Glitter", "Crafts", 1.89, 50),
 ("Mason Jars", "Home", 15.99, 12), ("Toothbrush", "Bath", 3.49, 25), 
 ("Clock", "Home", 7.89, 50), ("Sticky Notes", "Office", 2.99, 100), 
 ("Popsicle Sticks", "Crafts", 3.12, 40), ("Pillow", "Home", 18.55, 5), 
