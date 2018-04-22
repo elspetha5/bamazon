@@ -49,11 +49,11 @@ function action() {
             // If not enough, log "Insufficient quantity!" prevent order from going through
             if (res[0].stock_quantity < answers.units) {
                 console.log(`
-                Sorry, we don't have that many units of ${res[0].product_name}`);
+    Sorry, we only have ${res[0].stock_quantity} units of ${res[0].product_name}`);
                 
                 setTimeout(function() {
-                    console.log(`
-                Please pick a different amount or a new item:`);
+                    console.log(`    Please pick a different amount or a new item:
+                    `);
                 }, 2000);
 
                 setTimeout(function() {
@@ -70,8 +70,8 @@ function action() {
                 // Show customer total cost of purchase
                 var cost = res[0].price * answers.units;
                 console.log(`
-                Thank you for your purchase!
-                Total cost: $${cost}.`);
+    Thank you for your purchase!
+    Total cost: $${cost}.`);
                 connection.end();
             };
         });
